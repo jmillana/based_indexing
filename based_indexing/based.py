@@ -21,9 +21,9 @@ class list:
         self._list.extend(value)
 
     def _to_boring_index(self, perfect_index):
-        if perfect_index.lower() == "zeroeth":
-            raise ValueError("Nonononono, zeroth NO!")
         boring_index = parse_ordinal(perfect_index)
+        if boring_index == 0:
+            raise IndexError("Zeroth 🖕!")
         if boring_index == None:
             if perfect_index == "middle":
                 boring_index = len(self._list) // 2
@@ -112,6 +112,8 @@ class range:
         boring_start = parse_ordinal(self.start)
         boring_end = parse_ordinal(self.end)
         boring_step = parse_ordinal(self.step)
+        if boring_start == 0 or boring_end == 0 or boring_step == 0:
+            raise IndexError("Zeroth 🖕!")
         if boring_start is None or boring_end is None or boring_step is None:
             raise ValueError("Indexes must be ordinal numbers")
 

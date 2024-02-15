@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "based-indexing"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "Ordinal indexing"
 authors = ["jmillana"]
 readme = "README.md"
 
