@@ -8,6 +8,11 @@ The most **elegant** yet **blazingly** slow, list indexing system. **100%** not 
 # Best indexing ever
 With based_indexing your lists access will move from a sad a boring `my_lame_list[131]` (acctually 132) to `my_amazing_list["one hundred and thirty-first"]`
 
+# Install
+```console
+pip install based_indexing
+```
+
 ## Usage Examples
 
 ### Your new favorite list
